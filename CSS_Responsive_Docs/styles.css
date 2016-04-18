@@ -1,0 +1,271 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+    
+.clearItems:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+    
+* html .clearItems {
+	height: 0px;
+	}
+    
+body {
+	font-family: sans-serif;    
+	background-color: yellow;
+	line-spacing: 1.75em;
+}
+    
+#container {
+	width: 80%; 
+	margin: 0 auto;  
+	padding: 1%; 
+	background-color:white;
+	color:blue;
+}
+    
+header {
+	margin: 0 0 1% 0;
+	border-bottom: thin black solid;
+	border-style: double;
+	border-top-left-radius:10%;
+	border-bottom-right-radius:16%;
+	text-align: center;
+}
+    
+img {
+	display: block;
+	padding: 0 1%;
+	margin: 0 auto;
+}
+    
+#nav {
+	margin: 1% 0;
+	padding: 0;
+	background-color: #163C61;
+}
+    
+#nav li{
+	list-style: none;         
+	float: left;              
+	display: block;
+	margin: 1% auto;
+	padding: 0 8%;
+}
+    
+#nav li a {
+	text-decoration: none;
+	color: white;
+}
+		
+#nav li a:visited{
+	text-decoration: none;
+	color: red;
+}
+    
+#nav li a:hover {
+	color: #aaaa00;
+}
+    
+#body{
+	display: table;
+}
+    
+#vertNav {
+	display: table-cell;
+	width: 20;
+	margin: 0 5% 0 0;
+	padding: 5%;
+	background-color: #ffff11;
+}
+    
+#vertNav li{
+	width: 95%;
+	list-style: none; 
+	margin: 5%;
+	padding: 5% 0 20% 0;
+}
+    
+#vertNav li a,{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+#vertNav li a:visited{
+	display: block;
+	text-decoration: none;
+	color: red;
+}
+    
+vertNav li a:hover {
+	color: #aaaa00;
+}
+   
+.main {
+	width: 40%;
+	display: table-cell;
+}
+    
+.main-inner {    
+	padding: 0 1%;
+	text-align: center;
+}
+    
+p {
+	padding: 0 2% 2% 0;
+	text-align: center;
+}
+    
+.side {
+	width: 40%;
+	display: table-cell;
+}
+
+.side-inner {    
+	padding: 0 1%;;
+	text-align: center;
+}
+    
+.side-inner p{
+	text-align: center;
+}
+    
+#footer {
+	clear:both;
+	background-color: #163C61;
+	color: white;
+	margin: 2% 0 0 0;
+	padding: 2%;
+}  
+
+@media screen and (max-width: 1100px)
+{
+
+	body {
+		line-spacing: 1.5em;
+	}
+    
+	#container {
+		width: 75%; 
+	}
+    
+	header {
+		margin: 0;
+		border-top-left-radius:0%;
+		border-bottom-right-radius:0%;
+	}
+	
+	#nav li{
+	list-style: none;         
+	float: left;              
+	display: block;
+	margin: 1% auto;
+	padding: 0 15%;
+}
+    
+	img {
+		padding: 0 2%;
+	}
+	#vertNav {
+		width: 25;
+	}
+    
+	#vertNav li{
+		width: 95%;
+		list-style: none; 
+		margin: 0;
+		padding: 5% 0 20% 0;
+	}
+    
+	#footer {
+		margin: 0;
+	}  
+    
+}
+
+@media screen and (max-width: 520px)
+{
+
+	body {
+		line-spacing: 1.25em;
+		background-color: green;
+	}
+    
+	#container {
+	width: 300px; 
+	margin: 0 auto;  
+	padding: 1; 
+	background-color:white;
+	color:blue;
+	}
+	
+	#nav {
+	margin: 0;
+	padding: 0;
+	background-color: #163C61;
+	}
+	
+	#nav li{
+	list-style: none;                      
+	display: block;
+	margin: 0 auto;
+	padding: 0 12%;
+	}
+	
+	#body{
+	display: normal;
+	}
+	
+	#vertNav {
+	display: normal;
+	width: 65px;
+	margin: 1% 1% 1% 1%s;
+	padding: 1%;
+	background-color: #ffff11;
+	}
+    
+	#vertNav li{
+	width: 95%;
+	list-style: none; 
+	margin: 1%;
+	padding: 1% 1% 1% 1%;
+	}
+	
+	.main {
+	width: 75%;
+	display: block;
+	text-align: center;
+	}
+    
+	.main-inner {    
+	padding: 1% 1%;
+	
+	}
+
+	.side {
+	width: 75%;
+	display: block;
+	text-align: center;
+	}
+
+	.side-inner {    
+	padding: 1% 1%;
+	text-align: center;
+	}
+
+}
+*/delete below line later*/
+.centered {
+font-size: 30px;
+text-align: center;
+margin: 0, 50%;
+position: relative;
+}
+
+    

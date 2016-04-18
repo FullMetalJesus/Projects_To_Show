@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 10-1</title>
+
+<script type="text/javascript">
+<!--
+function changeButton(){
+	if(document.getElementById('radiobuttonWebdev').checked === true){
+	radioButton = document.getElementById('radiobuttonWebdev').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Web Developer!";
+	alert("Hello " + header);
+	}
+	if(document.getElementById('radiobuttonGovernment').checked === true){
+	radioButton = document.getElementById('radiobuttonGovernment').value;
+	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
+	alert("Hello " + header);
+	}
+	if(document.getElementById('Sports').checked === true){
+	radioButton = document.getElementById('Sports').value;
+	var header = document.getElementById('Sports').value.innerHTML = "Sports Enthusiast!";
+	alert("Hello " + header);
+	}
+	if(document.getElementById('News').checked === true){
+	radioButton = document.getElementById('News').value;
+	var header = document.getElementById('News').value.innerHTML = " News Enthusiast!";
+	alert("Hello " + header);
+	}
+	if(document.getElementById('Porn').checked === true){
+	radioButton = document.getElementById('Porn').value;
+	var header = document.getElementById('Porn').value.innerHTML = "Food Enthusiast!";
+	alert("Hello " + header);
+	}
+	getTest();
+}
+-->
+</script>
+</head>
+
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<form>
+<p>Please select your favorite type of Web site:</p>
+<input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" >Web Development<br />
+<input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government<br />
+<input id="Sports" type="radio" name="group1" value="Sports">Sports<br />
+<input id="News" type="radio" name="group1" value="News">News<br />
+<input id="Porn" type="radio" name="group1" value="Porn">Food Porn<br />
+
+
+<script type="text/javascript">
+<!--
+function getTest(){
+	document.write("<h3>CIW JavaScript Specialist</h3>");
+	document.write("<hr />");
+
+	if(radioButton == "Web_Development"){
+	document.write("<p>Here's a great site for Web developers:</p><a href=http://www.CIWcertified.com/>CIW Certified</a>");
+	}
+	
+	if(radioButton == "Government"){
+	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
+	}
+	if(radioButton == "Sports"){
+	document.write("<p>Here's a great site if you're interested in sports:</p><a href=http://espn.go.com/>Entertainment Sports Programing Network</a>");
+	}
+	if(radioButton == "News"){
+	document.write("<p>Here's a great site if you're interested in news with a kick of comedy:</p><a href=http://thedailyshow.cc.com/>Entertainment News Programing Network AKA Comedy Central.</a>");
+	}
+	if(radioButton == "Porn"){
+	document.write("<p>Here's a great site if you're interested in the twitter hashtag trend known as FoodPorn:</p><a href=http://foodporndaily.com/>Food Porn Daily website. You will drool.</a>");
+	}
+}
+-->
+</script>
+
+<p>
+<input type="button" onclick="changeButton()" value="Click Here" />
+</p>
+</form>
+
+</body>
+</html>

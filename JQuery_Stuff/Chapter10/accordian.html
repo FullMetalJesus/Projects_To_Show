@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CIS 246 jQuery</title>
+       <meta charset="utf-8">
+	   <link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	   <link rel="stylesheet" type="text/css" href="jquery-ui.structure.css">
+	   <link rel="stylesheet" type="text/css" href="jquery-ui.theme.css">
+	   <style>
+	   #bigpage {
+		height: 300px;
+	   }
+	   </style>
+	   <script src="jquery.js"></script>
+       <script src="jquery-ui.js" type="text/javascript"></script>
+       <script type="text/javascript">
+			<!--
+			$(document).ready(function(){
+				$("#accordian").accordion({
+				//fillSpace: true, fills a predfined space
+				event: 'mouseover',// default for items to be clicked as opposed to mouseover.
+				collapsible: true //if not here default is for first area to be open.
+				//,
+				//active: 1 //0,1,2, or false
+				});
+			});
+			//-->
+		</script>
+	</head>
+	<body>
+		<div id="bigpage">
+			<div id="accordian">
+				<h3><a href="#">This is an Accordian</a></h3>
+				<div>This is useful for displaying potentially large amounts of content in a confined space.</div>
+			
+				<h3><a href="#">Extra Information</a></h3>
+				<div>In many cases, accordians may be used to as navigational aids outside of a link drop down menu or menu tabs. </div>
+			
+				<h3><a href="#">About My Prefernces</a></h3>
+				<div><p>I prefer using accordians with a 'mouseover' event in order to activate them either on purpose or by accident.  I find this to be a useful practice for when the end user is a novice with computers.  The reason behind this is because accordians my appear to be an un-interactable/static item on a webpage to un-familiar user who may not know or think to click on the accordian.</p><br><p>Another feature I enjoy using with jQuery UI accordians is the 'collapsible' feature.  This feature makes it possible to have all accordians deslected, in a collapsed manner, which gives more room/space to the rest of the content on the web page.</p></div>
+			</div>
+		</div>
+	</body>
+</html>

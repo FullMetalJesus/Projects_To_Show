@@ -1,0 +1,43 @@
+			body{
+			background-image:url("images/galaxybackground.jpg");
+			font-size: 18px;
+			}
+			#container{
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				background-color: #ffffff;
+				border: 1px solid black;
+				opacity: 0.75;
+				filter: alpha(opacity=75);
+			}
+			#header nav main{
+				font-weight: black;
+				color: white;
+			}
+			#menu{
+			width: 510px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+			#main{
+			margin-left: auto;
+			margin-right: auto;
+			}
+			.ui-menu:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+			.ui-menu .ui-menu-item {
+				display: inline-block;
+				float: left;
+				margin: 0;
+				padding: 0;
+				width: auto;
+			}
+			.error{color:red}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<books>
+    <book>
+		<isbn10>123456789x</isbn10>
+        <title>XML Developer's Guide</title>
+		<author>Gambardella, Matthew</author>
+		<publish_date>2000-10-01</publish_date>
+        <price>44.95</price>
+    </book>
+    <book>
+        <isbn10>1234567890</isbn10>
+        <title>Midnight Rain</title>
+		<author>Ralls, Kim</author>
+        <publish_date>2000-12-16</publish_date>
+        <price>5.95</price>
+    </book>
+    <book>
+		<isbn10>012345678y</isbn10>
+		<title>Maeve Ascendant</title>
+        <author>Corets, Eva</author>
+        <publish_date>2000-11-17</publish_date>
+		<price>5.95</price>
+    </book>
+    <book>
+		<isbn10>054344478d</isbn10>
+		<title>Oberon's Legacy</title>
+        <author>Corets, Eva</author>
+        <publish_date>2001-03-10</publish_date>
+		<price>5.95</price>
+    </book>
+    <book>
+		<isbn10>111344478c</isbn10>
+		<title>The Sundered Grail</title>
+        <author>Corets, Eva</author>
+        <publish_date>2001-09-10</publish_date>
+		<price>5.95</price>
+    </book>
+</books>

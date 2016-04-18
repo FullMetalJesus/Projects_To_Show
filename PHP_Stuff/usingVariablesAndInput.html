@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Using Variables and Input Assignment</title>
+<style type="text/css">
+ 
+.phpEcho {
+    background-color: tan;
+    border: thin black solid;
+    padding: 25px;
+	width: 450px;
+    height: 6-0px;
+}
+
+.formLayout {
+    background-color: #f3f3f3;
+    border: solid 1px #a1a1a1;
+    padding: 10px;
+    width: 400px;
+    height: 550px;
+}
+         
+.formLayout label, .formLayout div {
+    text-align: right;
+    padding-right: 20px;
+}
+
+br {
+    clear: both;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>    
+<script type="text/javascript">
+	$("document").ready ( function() {
+			$("#myForm").validate({//runs the validation with specific rules real time while end-user enters data
+				rules:{
+					txtUserName : {
+						minlength : 5 
+					},
+					checkBox: {
+						require_from_group: [1, ".CheckBoxGroup"] //when "required" is listed in the first '<input type="checkbox">' tag, this segmet of code requires at least 1 checkbox is selected of the associated checkbox 'class' in order for the form validation to proceed.
+					}
+				}
+			});
+			
+			$( ".button1" ).click(function() {//submit button coding
+				if ( $( "#myForm" ).valid() ){
+						$("#myForm").submit();
+					}
+			});
+			
+			$(".button2").click(function() { //resets button coding
+					window.location.assign("usingVariablesAndInput.html");
+			});
+			
+		});
+</script>
+
+</head>
+
+<body>
+<h3>David's Super Quiz</h3>
+<div class="phpEcho">
+    <form id="myForm" action="usingVariablesAndInputResponse.php" method="post">
+        <div class="formLayout">
+            <div id="warning" style="color:red;font-weight:bold;"></div><br>
+            
+            <label for="txtUserName">User Name:</label>(Required)
+            <input name="txtUserName" id="txtUserName" required /><br>
+			
+			<label for="trueFalse">Cool True or False Question: X~=Y?</label><br>
+            <input type="radio" name="trueFalse" id="trueFalse" value="True" checked="checked"/>True<br>
+            <input type="radio" name="trueFalse" value="False"/>False<br>
+			
+			<label for="multiChoiceRadio">Cool Multiple Choice Radio Question: X~= ?</label><br>
+            <input type="radio" name="multiChoiceRadio" id="multiChoiceRadio" value="a" checked="checked"/>a<br>
+            <input type="radio" name="multiChoiceRadio" id="multiChoiceRadio2" value="b" />b<br>
+			<input type="radio" name="multiChoiceRadio" id="multiChoiceRadio3" value="c" />c<br>
+			
+			<label for="checkBox">(Required at least 1 box checked)<br>Cool Multiple Answer Radio Question: Y~= ?+?</label><br>
+			<input type="checkbox" name="checkBox" id="checkBox" class="CheckBoxGroup" required value="Harry">Harry<br>
+			<input type="checkbox" name="checkBox" id="checkBox2" class="CheckBoxGroup" value="James">James<br>
+			<input type="checkbox" name="checkBox" id="checkBox3" class="CheckBoxGroup" value="Potter">Potter<br>
+			
+			<label for="essayQ">Cool Essay Question: What relationship does x have to y?</label><br>
+			<textarea name="essayQ" id="essayQ" rows="10" cols="40" required></textarea><br>
+			
+			<label for="selectAnswer">Cool Select Question: What is the quiz for?</label>
+            <select name="selectAnswer" id="selectAnswer">
+                <option value="PHP" >PHP</option>
+                <option value="SEO">SEO</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+				<option value="Javascript">Javascript</option>
+				<option value="JQuery" selected>JQuery</option>
+            </select>    
+            <br>            
+			<br> 
+            <button type="button" name="button1" class="button1">submit</button>
+			<button type="button" name="button2" class="button2">reset</button>            
+        </div>
+    </form>    
+</div>
+</body>
+</html>

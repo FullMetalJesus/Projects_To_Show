@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Images are from Public Archives. Actual images located at http://nos.twnsnd.co/  (New Old Stock)"/>
+		<title>Fun Times with Effects</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+		</script>
+		<script>
+		$(document).ready(function(){
+			$("input[name = 'btnName1']").click(function(){
+				$(".img1").slideToggle ();
+			});
+			$("input[name = 'btnName2']").click(function(){
+				if($(".img2").css('display') == 'none'){
+					$(".img2").fadeIn(1200);
+				}
+				else{
+					$(".img2").fadeOut(1200);
+				}
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<br>
+		<img id="img1" class="img1" src="http://41.media.tumblr.com/e34edc58d0cbdadedb0451852d63a84f/tumblr_nrt7g8WDii1sfie3io1_1280.jpg" alt="Astronaut on the Moon">
+		<br>
+		<input type="button" name="btnName1" value="Slide Toggle" />
+		<br>
+		<img id="img2" class="img2" src="http://41.media.tumblr.com/a811888fff7b10939a5c8a3ccecaa658/tumblr_nrt7g6bNVI1sfie3io1_1280.jpg" alt="Flag, Astronaut and Ship">
+		<br>
+		<input type="button" name="btnName2" value="Fade Toggle" />
+	</body>
+</html>

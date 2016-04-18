@@ -1,0 +1,92 @@
+body {/*altered css version based on Marti Bakers' adminStyle.css
+*/
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color: #780E24;
+}
+#container{
+    width: 100%;
+    margin-left:130px;
+    margin-right:auto;
+}
+#head{
+    margin-right: 150px;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+    font-size: x-large;
+}
+.header{
+    padding-left: 25px;
+    background-color: #780E24;
+    color: White;
+    text-shadow: 2px 2px 2px #000;
+    font-size: xx-large;
+}
+.contact{
+    font-size:xx-small;
+    color: White;
+    text-shadow: 2px 2px 2px #000;
+    margin-top:50px;
+    float: right;
+}
+#break {
+    clear: all;
+}
+#logo {
+    float: left;
+}
+img{
+    float: left;
+    vertical-align:middle;
+}
+hr{
+    background-color:white;
+    margin-right: 150px;
+}
+#nav {
+    width: 150px;
+    color:white;
+    float: left;
+    margin-right:25px;
+    padding-top: 10px;
+    padding-left:20px;
+    background-color: #780E24;
+    height:1000px;
+}
+a {
+    color:white;
+}
+#main{
+    background-color: #F45D24;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:90%;
+    display:block;
+    height: 100%;
+}
+.input {
+    padding-left: 200px;
+}
+.choice{
+    margin-right:20px;
+    float:right;
+}
+.orderBreak{
+    padding-top: 10px;
+    clear:both;
+}
+.spacer{
+    background-image: url(graphics/spacer.PNG);
+    background-repeat: repeat;    
+}
+
+
+.toppings{
+    padding-left: 40px;
+}
+.toppings1{
+    float:left;
+    margin-right:50px;
+}
+/*.toppings {
+    visibility: hidden;
+}*/

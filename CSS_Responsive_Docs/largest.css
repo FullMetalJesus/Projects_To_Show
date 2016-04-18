@@ -1,0 +1,181 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body {
+margin: 0px;
+padding: 0px;
+}
+#wrapper {
+margin: 0 auto;
+padding: 0;
+width: 86%;
+font-family: Arial, sans-serif, Helvetica, "Times New Roman";
+}
+#header {
+height: 150px;
+background: #bfd255; /* Old browsers */
+background: -moz-linear-gradient(top, #bfd255 0%, #727300 0%, #8eb92a 70%, #e8d635 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(0%,#727300), color-stop(70%,#8eb92a), color-stop(100%,#e8d635)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #bfd255 0%,#727300 0%,#8eb92a 70%,#e8d635 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #bfd255 0%,#727300 0%,#8eb92a 70%,#e8d635 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #bfd255 0%,#727300 0%,#8eb92a 70%,#e8d635 100%); /* IE10+ */
+background: linear-gradient(to bottom, #bfd255 0%,#727300 0%,#8eb92a 70%,#e8d635 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#e8d635',GradientType=0 ); /* IE6-9 */
+color:white;
+text-align:center;
+font-size: 50px;
+}
+
+.bottomout {
+position: relative;
+top: 30px;
+}
+
+.floatleftblock {
+display block;
+float: left;
+width: 200px;
+opacity: 0.65;
+filter: alpha(opacity=65); /* For IE8 and earlier */
+}
+#horizontalnav {
+background-color: #2E3640;
+color: white;
+}
+.dropdownmenu {
+padding:0;
+margin:0;
+list-style-type:none;
+height:50px;
+}
+.dropdownmenu li { 
+float:left;
+}
+
+.dropdownmenu li a {
+padding:5px 5px;
+display: block;
+color: white;
+text-decoration:none;
+font:14px arial, verdana, sans-serif;
+}
+
+.dropdownmenu li a:hover {
+padding:5px 5px;
+display:block;
+color: #2E3640;
+background-color: #969a9f
+text-decoration:none;
+font:14px arial, sans-serif, verdana,;
+}
+
+.dropdownmenu ul {
+position:absolute;
+left:-9999px;
+top:-9999px;
+list-style-type:none;
+}
+
+.dropdownmenu li:hover {
+position:relative;
+background-color: #969a9f
+}
+
+.dropdownmenu li:hover ul {
+left:0px;
+top:26px;
+background-color: #969a9f;
+padding:0px;
+}
+
+.dropdownmenu li:hover ul li a {
+padding:10px;
+display:block;
+width:88px;
+text-indent:15px;
+background-color: #969a9f;
+}
+
+.drop_menu li:hover ul li a:hover {
+background-color: #969a9f;
+color: #2E3640;
+}
+#section {
+display: block;
+margin: 0;
+padding: 0px 0px;
+height: 100px;
+background-color: white;
+text-align: left;
+}
+floatleft {
+margin: 0;
+padding: 0;
+display: block;
+height: 100px;
+width: 200px;
+}
+.center {
+position: relative;
+top:-60px;
+padding: 0;
+margin: 0 50%;
+font-size: 35px;
+color: #bfd255;
+}
+#nav {
+margine: 0px auto;
+background-color:#2E3640;
+height:850px;
+width: 200px;
+float: left;
+display: block;
+background-color: #2E3640;
+text-align: center;
+}
+.vertnavmenu {
+ padding: 5px;
+ margin: 0 15px 0 15px;
+ font-size: 20px;
+ line-height: 45px;
+ text-decoration: none;
+ list-style-type: none;
+ }
+ 
+.vertnavmenu li a {
+color: white;
+}
+.vertnavmenu li a:hover {
+color: #2E3640;
+background-color: #969a9f;
+}
+
+
+#column1 {
+font-size: 14px;
+float: left;
+display: block;
+background-color: white;
+text-align: left;
+}
+
+p {
+    text-indent: 50px;
+	line-height: 150%;
+	
+} 
+
+#footer {
+    background-image: url('banner1.png');
+    background-color: #cccccc;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+.watermark {
+    position:fixed;
+    bottom: 0px;
+    right: 0px;    
+}

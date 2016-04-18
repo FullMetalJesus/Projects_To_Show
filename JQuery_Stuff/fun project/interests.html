@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume - David M. Regalado</title>
+		<meta name="Author" content="David M. Regalado" />
+		<meta name="keywords" content="Personal Web Site, Home, jQuery" />
+		<meta name="description" content="Introduction Using jQuery" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="robots" content="none" />
+		<script src="jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script><!-- fancy box -->
+		<script src="jquery-ui.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		<!--
+		$("document").ready ( function() {
+			//for menu handling
+			$(function() {
+				$( "li" ).button();
+				$( "#menu" ).menu();
+			});
+			
+			var path = location.pathname;//activates current menu/nav item.------
+			var pathArray = path.split('/');
+			var pathArrayLength = pathArray.length;
+			$("a[href*='"+pathArray[pathArrayLength-1]+"']").effect( "highlight", {color: 'blue'}, 500 );
+				//--------------
+				
+			//accordian
+			$("#accordian").accordion({
+				fillSpace: true,
+				active: 1,
+				collapsible: true
+			});
+			//---
+			$(".fancybox").fancybox();//fancybox intialization
+			
+			$("input[name = 'slidetoggle']").click(function(){
+				$(".slidetoggle").slideToggle ();
+			});
+			$("input[name = 'fadetoggle']").click(function(){
+				if($(".fadetoggle").css('display') == 'none'){
+					$(".fadetoggle").fadeIn(2500);
+				}
+				else{
+					$(".fadetoggle").fadeOut(2500);
+				}
+			});
+		});
+		//-->
+		</script>
+		<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui.structure.css">
+		<link rel="stylesheet" type="text/css" href="jquery-ui.theme.css">
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" /><!-- fancy box -->
+		<link rel="stylesheet" type="text/css" href="layout.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+			
+			</div>
+			<div id="nav">
+				<ul id="menu">
+					<li><a href= "home.html">Home</a></li>
+					<li><a href= "resume.html">Resume</a></li>
+					<li><a href= "guestbook.html">Guest-Book</a></li>
+					<li><a href= "interests.html">Interests</a></li>
+				</ul>
+			</div>
+			<div id="main">
+				<br>
+				My Interests:
+				<br><br>
+				An accordian which opens up to the second item, fills its space and is collapsible.<br>
+				It accordian contains, respectively by segment:<br>
+				 a toggle image,<br>
+				 a slide toggle image,<br>
+				 and a fancy box gallery.<br><br>
+				<br>
+				<div id="accordian">
+					<h3><a href="#">Stuff / Slide Toggle</a></h3>
+					<div>
+						<input type="button" name="slidetoggle" value="Slide Toggle" /><br><br>
+						<img src="images/joomlaville.jpg" alt="A picture of Joomlaville" class="slidetoggle" width="300" height="200">
+					</div>
+			
+					<h3><a href="#">Other Stuff / Fade Toggle</a></h3>
+					<div>
+						<input type="button" name="fadetoggle" value="Slide Toggle" /><br><br>
+						<img src="images/trainstation.jpg" alt="A picture of Joomlavilles' Train Station" class="fadetoggle" width="300" height="200">
+					</div>
+			
+					<h3><a href="#">More Stuff / Image Gallery</a></h3>
+					<div>
+						<img src="images/park1.jpg" alt="A picture of a Joomlaville Park" rel="gallery01" class="fancybox" width="300" height="200">
+						<img src="images/park2.jpg" alt="A picture of a Joomlaville Park" rel="gallery01" class="fancybox" width="300" height="200">
+						<img src="images/park3.jpg" alt="A picture of a Joomlaville Park" rel="gallery01" class="fancybox" width="300" height="200">
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				Copyright@David Regalado
+			</div>
+		</div>
+	</body>
+</html>

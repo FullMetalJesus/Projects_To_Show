@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>MJB Chapter 9 Assignment</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			<!--
+			$(document).ready(function() {
+
+				$('tr:eq(0) *').css('background-color', 'yellow');//sets table header color
+
+				$.ajax({
+					type: "GET",
+					dataType: "XML",
+					url: "cdCollection.xml",
+					success: parseXML
+				});
+
+    			function parseXML(xml){  
+					$(xml).find("cd").each(function(){
+						var title = $(this).find('title').text();
+            			var artist = $(this).find('artist').text();
+            			var recordCompany = $(this).find('company').text();
+						var price = $(this).find('price').text();
+            			$('<tr></tr>').html('<td>'+title+'</td>' +'<td>'+artist+'</td>'+'<td>'+recordCompany+'</td>'+'<td>'+price+'</td>').appendTo('#list');
+        });     
+    }
+});
+</script>
+</head>
+<body>
+<h2>The Current CD Collection</h2>
+<table border="1" cellpadding="4">
+     <thead>
+          <tr>
+               <th>Title</th>
+               <th>Artist</th>			   
+               <th>Record Company</th>
+               <th>Price</th>			   
+          </tr>
+     </thead>
+     <tbody id="list">
+          
+     </tbody>
+</table>
+
+
+</body>
+</html>

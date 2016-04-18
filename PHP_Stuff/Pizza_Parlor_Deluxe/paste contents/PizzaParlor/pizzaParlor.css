@@ -1,0 +1,41 @@
+*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body {
+			width: 1200px;
+			height: 1000px;
+			font-family: Arial, sans-serif, Helvetica, "Times New Roman";
+			font-size: 14px;
+			text-align: center;
+		}
+		#header {
+			height: 200px;
+			width: 100%;
+			display: block;
+			background-color: blue;
+			color: white;
+			font-size: 35px;
+		}
+		#leftbar {
+			display: block;
+			float: left;
+			width: 100px;
+			height: 800px;
+			background-color: red;
+		}
+		#middlebar {
+			display: block;
+			float: left;
+			width: 700px;
+			height: 800;
+			background-color: white;
+		}
+		#dynamicfield {
+			display: block;
+			float: right;
+			width: 400px;
+			height: 800px;
+			background-color: grey;
+			text-align: center;
+		}

@@ -1,0 +1,126 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+    
+.clearItems:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+    
+* html .clearItems {
+	height: 0px;
+	}
+    
+body {
+	font-family: "Times New Roman", verdona, sans-serif;    
+	background-color: white;
+	line-spacing: 2em;
+	font-size: 12pt;
+}
+
+a {
+   text-decoration: none; /* removes any existing link text decoration*/
+   color: #000;
+}
+a[href^="http://"]::after {
+   content: ':' attr(href);
+} /* used to generate links after they appear so when printer, a user knows what site is referenced */
+    
+#container {
+	width: 80%; 
+	margin: 0 auto;  
+	padding: 1%; 
+	background-color:white;
+	color:black;
+}
+    
+header {
+	margin: 0 0 1% 0;
+	border-bottom: thin black solid;
+	text-align: center;
+}
+    
+img {
+	display: block;
+	padding: 0 1%;
+	margin: 0 auto;
+}
+    
+#nav {
+	margin: 1% 0;
+	padding: 0;
+	background-color: white;
+}
+    
+#nav li{
+	list-style: none;         
+	float: left;              
+	display: block;
+	margin: 1% auto;
+	padding: 0 8%;
+}
+  
+#body{
+	display: table;
+}
+    
+#vertNav {
+	display: table-cell;
+	width: 20;
+	margin: 0 5% 0 0;
+	padding: 5%;
+	background-color: white;
+}
+    
+#vertNav li{
+	width: 95%;
+	list-style: none; 
+	margin: 5%;
+	padding: 5% 0 20% 0;
+}
+    
+#vertNav li a,{
+	display: block;
+	text-decoration: none;
+}
+   
+.main {
+	width: 40%;
+	display: table-cell;
+}
+    
+.main-inner {    
+	padding: 0 1%;
+	text-align: center;
+}
+    
+p {
+	padding: 0 2% 2% 0;
+	text-align: center;
+}
+    
+.side {
+	width: 40%;
+	display: table-cell;
+}
+
+.side-inner {    
+	padding: 0 1%;;
+	text-align: center;
+}
+    
+.side-inner p{
+	text-align: center;
+}
+    
+#footer {
+	clear:both;
+	background-color: white;
+	margin: 2% 0 0 0;
+	padding: 2%;
+}  
+    

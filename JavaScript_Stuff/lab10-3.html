@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 10-3</title>
+</head>
+
+<body>
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<div id="SetDiv" align="left"><!-- Try as I might, it is not possible to get this page to validate while maintaining the use of 'special_attribute' as the w3c no longer recognizes it as a valid attribute. So, I have removed it.  Any attempts to convert the page to html5 will result w3c validator error marked as a css error for attempting to set 'align-left'/'align-right' among other things, which effectively defeats the purpose of this lab. D.M.R. 4-28-2015-->
+<p>What are the attributes of this div tag?</p>
+</div>
+    <input type="button" value="Click Me!" onclick="getValues()" />
+    <p>Please click the button now</p>
+    <script type="text/javascript">
+        var div = null;
+        function getValues()
+        {
+            if (div == null) 
+            {
+            div = document.getElementById("SetDiv");
+            }
+            alert(div.id);     
+            alert(div.align);         
+		changeValues();             
+        } 
+		function changeValues(){
+            if (div == null) {
+                div = document.getElementById("SetDiv");
+            }
+            var d = document.getElementById("SetDiv"); 
+			d.setAttribute("align", "center");
+			alert(div.align);
+			RemoveValues();
+          
+        }   
+		function RemoveValues(){
+            if (div == null) {
+                div = document.getElementById("SetDiv");
+            }
+            var d = document.getElementById("SetDiv"); 
+			d.removeAttribute("align");
+			alert(div.align); 
+			ChangeValuesBack();         
+        }  
+		function ChangeValuesBack(){
+            if (div == null) {
+                div = document.getElementById("SetDiv");
+            }
+             var d = document.getElementById("SetDiv"); 
+			d.setAttribute("align", "left");
+			alert(div.align);
+			}        
+ </script>
+</body>
+</html>
